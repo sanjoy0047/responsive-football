@@ -74,7 +74,7 @@ Player album
     margin-left: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
 }
-.player-banner img{
+.player-image img{
     width: 300px;
     height: 256px;
 }
@@ -98,18 +98,19 @@ Highlights
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 0;
       
 }
 .highlights{
     width: 469px;
     height: 309px;
+    margin-left: 30px;
 }
 .match{
-    margin-left: 30px;
     width: 567px;
     height: 427px;
 }
-#highlights{
+#highlights-heading{
     font-size: 48px;
     font-weight: 700px;
 }
@@ -117,6 +118,9 @@ Highlights
 /* ------------------
 Bonus Part-News Letter 
 ----------------------*/
+.Newsletter{
+    margin-top: 100px;
+}
 #text-position{
     text-align: center;
 }
@@ -134,24 +138,33 @@ Footer section
     margin-bottom: 30px;
     font-size: 18px;
 }
+.footer img{
+    width: 100%;
+}
 
 .social-image{
     width: 32px;
     height: 32px;
     margin-left: 14px;
 }
+/*----------------------
+ Media Queries 
+ -----------------------*/
 @media only screen and (min-width:688px) and (max-width:992px){
     .container .container-2 .container-3{
         width: 100%;
     }
-    .players{
-        grid-template-columns: repeat(1,1fr);
+    .players .highlights{
+        grid-template-columns: repeat(1, 1fr);
         
+    }
+    .player .highlights{
+        flex-direction: column;
     }
 
     .top-banner{
         flex-direction: column;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     
 }
