@@ -1,0 +1,40 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 1fr 1fr; */
+    grid-row-gap: 30px;
+}
+.bg-image{
+    background-image: url(images/top-banner-background.png);
+    background-repeat: no-repeat;
+    margin: 0;
+}
+.banner-image{
+    width: 560px;
+    height: 440px;
+}
+h1{
+    font-size: 64px;
+    font-weight: 700px;
+}
+.link-button{
+    text-decoration: none;
+    background-color: #E02C6D;
+    color:white;
+    padding: 15px 40px;
+    font-size: 16px;
+    
+}
+.fa-arrow-right{
+    padding-left: 10px;
+}
+.banner-image{
+    width: 100%;
+}
