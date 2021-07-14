@@ -30,7 +30,7 @@ body{
     font-size: 64px;
     font-weight: 700px;
 }
-.half-width a{
+.link-button{
     text-decoration: none;
     background-color: #E02C6D;
     color:white;
@@ -47,6 +47,14 @@ body{
 /* --------------------
 Player album 
 ----------------------*/
+.container-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -56,32 +64,54 @@ Player album
 }
 .players{
     background: #FFFFFF;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;   
+      
 }
 
-.player .player-banner img{
+.player{
+    width: 305px;
+    height: 474px;
+    padding: 10px;
+    margin-left: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+}
+.player-banner img{
     width: 300px;
     height: 256px;
-    padding: 10px;
 }
 .player-detail{
     color: #18191F;
     padding: 10px;
 }
+.player-title{
+    font-size: 28px;
+    font-weight: 700px;
+}
 .player-info{
     width: 300px;
     color: #6C6C6C;
+    margin-right: 10px
 }
 /* -------------------------
 Highlights
 ----------------------------*/
+.container-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+}
 .highlights{
-    margin-left: 50px;
-    margin-top: 50px;
+    width: 469px;
+    height: 309px;
 }
 .match{
+    margin-left: 30px;
     width: 567px;
     height: 427px;
+}
+#highlights{
+    font-size: 48px;
+    font-weight: 700px;
 }
 
 /* ------------------
@@ -111,7 +141,7 @@ Footer section
     margin-left: 14px;
 }
 @media only screen and (min-width:688px) and (max-width:992px){
-    .contaner{
+    .container .container-2 .container-3{
         width: 100%;
     }
     .players{
