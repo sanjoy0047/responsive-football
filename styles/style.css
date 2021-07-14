@@ -3,32 +3,38 @@
 /* Common styles or utilities */
 body{
     font-family: 'Poppins', sans-serif;
-}
-
-.container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* grid-template-columns: 1fr 1fr; */
-    grid-row-gap: 30px;
-}
-.bg-image{
-    background-image: url(images/top-banner-background.png);
-    background-repeat: no-repeat;
     margin: 0;
 }
-.banner-image{
+/* top banner and heading */
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.top-banner{
+    background-color: #2D25A0;
+    width: 1440px;
+    height: 677px;
+}
+.half-width img{
     width: 560px;
     height: 440px;
 }
-h1{
+.img-transform:hover{
+    transition: transform 2s;
+    transform: rotateY(180deg);
+}
+.half-width h1{
+    color:white;
     font-size: 64px;
     font-weight: 700px;
 }
-.link-button{
+.half-width a{
     text-decoration: none;
     background-color: #E02C6D;
     color:white;
-    padding: 15px 40px;
+    padding: 12px 40px;
     font-size: 16px;
     
 }
@@ -37,4 +43,85 @@ h1{
 }
 .banner-image{
     width: 100%;
+}
+/* --------------------
+Player album 
+----------------------*/
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 25px;
+    
+}
+.players{
+    background: #FFFFFF;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;   
+}
+
+.player .player-banner img{
+    width: 300px;
+    height: 256px;
+    padding: 10px;
+}
+.player-detail{
+    color: #18191F;
+    padding: 10px;
+}
+.player-info{
+    width: 300px;
+    color: #6C6C6C;
+}
+/* -------------------------
+Highlights
+----------------------------*/
+.highlights{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.match{
+    width: 567px;
+    height: 427px;
+}
+
+/* ------------------
+Bonus Part-News Letter 
+----------------------*/
+#text-position{
+    text-align: center;
+}
+#News{
+    font-size: 48px;
+    color:#E02C6D;
+}
+
+/*---------------------
+Footer section
+--------------------- */
+.footer-line{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.social-image{
+    width: 32px;
+    height: 32px;
+    margin-left: 14px;
+}
+@media only screen and (min-width:688px) and (max-width:992px){
+    .contaner{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+
+    .top-banner{
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
 }
